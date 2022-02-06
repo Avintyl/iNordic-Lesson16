@@ -15,7 +15,7 @@ class PostAdapter : RecyclerView.Adapter<PostViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
         return PostViewHolder(LayoutInflater.from(parent.context)
-            .inflate(R.layout.post_adapter_item, parent))
+            .inflate(R.layout.post_adapter_item, parent, false))
     }
 
     override fun onBindViewHolder(holder: PostViewHolder, position: Int) {
